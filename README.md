@@ -4,9 +4,7 @@
 ### How to Run Analysis
 1. Run registered_ens_scrape.py with command line: scrapy runspider registered_ens_scrape.py -o -:csv > registered_ens.csv 2> TRACE
   a. This program took about 1 hour to run with 1.2 million results on a Mac M1 chip
-2. Edit available_words.py on line 32 to run desired file for filtering ENS names
-
-  a. Current available files:
+2. Edit available_words.py on line 32 to run desired file for filtering ENS names. Current available files are:
   
     i. sowpods.csv -> https://www.wordgamedictionary.com/sowpods/download/sowpods.txt
     
