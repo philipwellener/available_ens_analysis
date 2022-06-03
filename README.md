@@ -4,7 +4,9 @@
 ### How to Run Analysis
 1. Run registered_ens_scrape.py with command line: scrapy runspider registered_ens_scrape.py -o -:csv > registered_ens.csv 2> TRACE
 
-      i. This program took about 1 hour to run with 1.2 million results on a Mac M1 chip
+      i. Visually inspect how many pages are in the table on the webpage: https://ens.tools/domains?perPage=250&showFilters=true&expiration=registered. Change line 21 of registered_ens_scrape.py to the total number of pages in the table
+      
+      ii. This program took about 1 hour to run with 4713 pages (approx. 1.2 million domains) on a Mac M1 chip
   
 2. Edit available_words.py on line 32 to run desired file for filtering ENS names. Current available files are:
   
